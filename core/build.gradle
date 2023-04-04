@@ -1,0 +1,19 @@
+description = 'core'
+apply plugin: 'kotlin'
+
+dependencies {
+    compile "mysql:mysql-connector-java:5.1.25"
+    compile "org.ktorm:ktorm-core:${ktorm_version}"
+    compile "org.ktorm:ktorm-support-mysql:${ktorm_version}"
+    compile "org.ktorm:ktorm-jackson:${ktorm_version}"
+    implementation "com.zaxxer:HikariCP:3.4.5"
+    implementation "javax.mail:mail:1.4.7"
+    implementation "com.github.ben-manes.caffeine:caffeine:2.9.0"
+
+    implementation "com.auth0:java-jwt:3.4.1"
+    implementation "org.mindrot:jbcrypt:0.4"
+}
+
+test {
+    useJUnitPlatform()
+}
