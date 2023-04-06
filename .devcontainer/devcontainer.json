@@ -1,0 +1,23 @@
+{
+  "name": "Woden-CodeSpace",
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "4gb",
+    "storage": "32gb"
+  },
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "kotlin.java.home": "/env/jdk-11.0.2",
+        "kotlin.languageServer.path": "/env/kotlin-server/bin/kotlin-language-server",
+        "kotlin.debugAdapter.path": "/env/kotlin-adapter/bin/kotlin-debug-adapter"
+      },
+      "extensions": [
+        "fwcd.kotlin"
+      ]
+    }
+  }
+}
